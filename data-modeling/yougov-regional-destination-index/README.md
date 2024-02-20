@@ -2,14 +2,23 @@
 
 # Data Modeling for Tourism Survey Analysis
 ## Overview
-This repository hosts a Python script for local execution, which is dedicated to the processing and analysis of extensive survey data focusing on regional tourist destinations. 
+This repository hosts a Python script for local execution, which is dedicated to: 
+- Processing and analysis of extensive survey data focusing on regional tourist destinations (YouGov Regional Destination Index). 
 The authoritative version of the script is maintained on Google Cloud Platform (GCP) cloud services. 
 
 ## Main function
-The primary goal of this repository is to demonstrate the transformation of a complex input dataset — a substantial SPSS file with over 2,230 columns — into three comprehensible, interrelated tables.
-The purpose of this data modeling is to capture individual survey responses, identify global trends by country, and assess the branding of various destinations as tourist spots. 
-The ERD attached to this documentation visualizes the relationships between different datasets within the project.
+The primary goal of this repository is to **demonstrate the transformation of a complex input dataset — a SPSS file with over 2,230 columns — into three comprehensible, interrelated tables.**
+The purpose of this data modeling is: 
+- To capture individual survey responses
+- Identify global trends by country.
+- Assess the branding of various destinations as tourist spots.
 
+## Output
+The script outputs three CSV files:
+- `main_ddbb_<Quarter>.csv`: This file records essential details for each participant of the survey. It's organized so that each row represents a distinct individual.
+- `GTP_ddbb_<Quarter>.csv`: This file focuses on the global travel profiles of the individuals, featuring 205 unique variables to capture diverse aspects of travel preferences. It is structured with each row detailing the profile of one individual.
+- `answers_ddbb_regions_<Quarter>.csv`: This file compiles responses from individuals regarding their opinions on 20 different regions. It is arranged such that each row contains a single individual's responses related to one specific region.
+  
 ## Entity-Relationship Diagram (ERD)
 The ERD demonstrates the structure of the database, illustrating the relationships between the main survey data (main_ddbb), the regional answers (answers_ddbb_regions), and the global travel profiles (GTP_ddbb). 
 The caseid acts as a foreign key linking the regional answers and global profiles to the main survey data.
@@ -37,10 +46,6 @@ The code is hosted in our GCP-environment.
 - os module
 Please make sure to install the required dependencies before running the script.
 
-## Output
-The script outputs three CSV files:
-- main_ddbb_<Quarter>.csv: Contains the main survey data.
-- GTP_ddbb_<Quarter>.csv: Contains the global travel profile data.
-- answers_ddbb_regions_<Quarter>.csv: Contains the regional answers data.
+
   
 Replace <Quarter> with the actual quarter's identifier when looking for the files.
