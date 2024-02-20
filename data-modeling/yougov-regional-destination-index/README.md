@@ -14,7 +14,7 @@ The ERD attached to this documentation visualizes the relationships between diff
 The ERD demonstrates the structure of the database, illustrating the relationships between the main survey data (main_ddbb), the regional answers (answers_ddbb_regions), and the global travel profiles (GTP_ddbb). 
 The caseid acts as a foreign key linking the regional answers and global profiles to the main survey data.
 
-<img width="801" alt="ERD" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/5bea8cb3-b1c3-4f2d-a628-accf68d3036c">
+<img width="801" alt="ERD" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/657e66e8-d254-4c76-99cb-9d6dbeb97970">
 
 
 ## Scripts
