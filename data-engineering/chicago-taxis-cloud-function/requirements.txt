@@ -1,0 +1,6 @@
+functions-framework==3.*
+pandas==2.2.0
+requests==2.31.0
+google-cloud-bigquery==2.34.2
+pyarrow==15.0
+datetime
