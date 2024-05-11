@@ -1,0 +1,1663 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/arnau/ontologies/2020/10/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/arnau/ontologies/2020/10/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/arnau/ontologies/2020/10/untitled-ontology-7"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consulting_Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recepcionist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Space"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AttendsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Area_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Consulting_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Floor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Next_free_slot"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Side"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Space_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Speciality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Surname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Waiting_List"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alex_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andrea_Morcillo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Annie_Lee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cardiology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carme_Llull"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elevator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emergency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Enric_Cristobal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Entrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eva_Perez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jason_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joan_Canals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Judith_Hernandez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Julian_Davis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kevin_Lin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laura_Farragh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lluis_Ferrer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mia_Vidal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monica_Torres"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oncology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pediatrics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pen_Miller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radiology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reception"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_113"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_221"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_222"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_223"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sean_Brown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Selena_Davis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Traumatology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Will_Freeman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xavier_Andreu"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recepcionist"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Space"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Area"/>
+        <Class IRI="#Space"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Andrea_Morcillo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Cardiology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Carme_Llull"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Space"/>
+        <NamedIndividual IRI="#Elevator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Emergency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Enric_Cristobal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Space"/>
+        <NamedIndividual IRI="#Entrance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Eva_Perez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Joan_Canals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Judith_Hernandez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Kevin_Lin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Laura_Farragh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Lluis_Ferrer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Mia_Vidal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Monica_Torres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Oncology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Radiology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Reception"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_111"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_112"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_113"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_221"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_222"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_223"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_301"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consulting_Room"/>
+        <NamedIndividual IRI="#Room_302"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Sean_Brown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Selena_Davis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Traumatology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recepcionist"/>
+        <NamedIndividual IRI="#Xavier_Andreu"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+        <NamedIndividual IRI="#Room_223"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+        <NamedIndividual IRI="#Room_202"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+        <NamedIndividual IRI="#Room_101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <NamedIndividual IRI="#Room_104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <NamedIndividual IRI="#Room_105"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Carme_Llull"/>
+        <NamedIndividual IRI="#Emergency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <NamedIndividual IRI="#Room_101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <NamedIndividual IRI="#Room_102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <NamedIndividual IRI="#Room_103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Eva_Perez"/>
+        <NamedIndividual IRI="#Reception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+        <NamedIndividual IRI="#Room_222"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+        <NamedIndividual IRI="#Room_301"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+        <NamedIndividual IRI="#Room_103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+        <NamedIndividual IRI="#Room_201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+        <NamedIndividual IRI="#Room_113"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+        <NamedIndividual IRI="#Room_221"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+        <NamedIndividual IRI="#Room_104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+        <NamedIndividual IRI="#Room_102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Laura_Farragh"/>
+        <NamedIndividual IRI="#Traumatology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Lluis_Ferrer"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+        <NamedIndividual IRI="#Room_111"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Mia_Vidal"/>
+        <NamedIndividual IRI="#Reception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Monica_Torres"/>
+        <NamedIndividual IRI="#Oncology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <NamedIndividual IRI="#Room_301"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <NamedIndividual IRI="#Room_302"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <NamedIndividual IRI="#Room_111"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <NamedIndividual IRI="#Room_112"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <NamedIndividual IRI="#Room_113"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+        <NamedIndividual IRI="#Room_112"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <NamedIndividual IRI="#Room_201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <NamedIndividual IRI="#Room_202"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_101"/>
+        <NamedIndividual IRI="#Emergency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_101"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_102"/>
+        <NamedIndividual IRI="#Emergency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_102"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_103"/>
+        <NamedIndividual IRI="#Emergency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_103"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_104"/>
+        <NamedIndividual IRI="#Cardiology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_104"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_105"/>
+        <NamedIndividual IRI="#Cardiology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_105"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_111"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_111"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_112"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_112"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_113"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_113"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_201"/>
+        <NamedIndividual IRI="#Radiology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_201"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_202"/>
+        <NamedIndividual IRI="#Radiology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_202"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_221"/>
+        <NamedIndividual IRI="#Traumatology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_221"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_222"/>
+        <NamedIndividual IRI="#Traumatology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_222"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_223"/>
+        <NamedIndividual IRI="#Traumatology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_223"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_301"/>
+        <NamedIndividual IRI="#Oncology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_301"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Room_302"/>
+        <NamedIndividual IRI="#Oncology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <NamedIndividual IRI="#Room_302"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+        <NamedIndividual IRI="#Room_105"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <NamedIndividual IRI="#Room_221"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <NamedIndividual IRI="#Room_222"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <NamedIndividual IRI="#Room_223"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+        <NamedIndividual IRI="#Room_302"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Xavier_Andreu"/>
+        <NamedIndividual IRI="#Radiology"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+        <Literal>Alex</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+        <Literal>17th December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+        <Literal>Traumatology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Alex_Smith"/>
+        <Literal>Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Andrea_Morcillo"/>
+        <Literal>Andrea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Andrea_Morcillo"/>
+        <Literal>Morcillo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+        <Literal>Annie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+        <Literal>7th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+        <Literal>Radiology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Annie_Lee"/>
+        <Literal>Lee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+        <Literal>Anthony</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+        <Literal>26th December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+        <Literal>Emergency</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Anthony_Bellman"/>
+        <Literal>Bellman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <Literal>Right</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <Literal>Cardiology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Waiting_List"/>
+        <NamedIndividual IRI="#Cardiology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Carme_Llull"/>
+        <Literal>Carme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Carme_Llull"/>
+        <Literal>Llull</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Elevator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Elevator"/>
+        <Literal>Front</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Space_name"/>
+        <NamedIndividual IRI="#Elevator"/>
+        <Literal>Elevator_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <Literal>Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <Literal>Emergency</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Waiting_List"/>
+        <NamedIndividual IRI="#Emergency"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Enric_Cristobal"/>
+        <Literal>Enric</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Enric_Cristobal"/>
+        <Literal>Cristobal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Entrance"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Entrance"/>
+        <Literal>Center</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Space_name"/>
+        <NamedIndividual IRI="#Entrance"/>
+        <Literal>Entrance</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Eva_Perez"/>
+        <Literal>Eva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Eva_Perez"/>
+        <Literal>Perez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+        <Literal>Gemma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+        <Literal>30th December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+        <Literal>Trumatology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Gemma_Moreno"/>
+        <Literal>Moreno</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+        <Literal>Helen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+        <Literal>29th December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+        <Literal>Oncology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Helen_Garcia"/>
+        <Literal>Garcia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+        <Literal>Irina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+        <Literal>13th December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+        <Literal>Emergency</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Irina_Gomez"/>
+        <Literal>Gomez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+        <Literal>Isabel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+        <Literal>31st December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+        <Literal>Radiology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Isabel_Rodriguez"/>
+        <Literal>Rodriguez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+        <Literal>Jason</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+        <Literal>7th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+        <Literal>Pediatrics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Jason_Smith"/>
+        <Literal>Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Joan_Canals"/>
+        <Literal>Joan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Joan_Canals"/>
+        <Literal>Canals</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+        <Literal>Jordan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+        <Literal>4th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+        <Literal>Traumatology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Jordan_Brown"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+        <Literal>Juan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+        <Literal>13th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+        <Literal>Cardiology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Juan_Mendez"/>
+        <Literal>Mendez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Judith_Hernandez"/>
+        <Literal>Judith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Judith_Hernandez"/>
+        <Literal>Hernandez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+        <Literal>Julian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+        <Literal>20th December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+        <Literal>Emergency</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Julian_Davis"/>
+        <Literal>Davis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Kevin_Lin"/>
+        <Literal>Kevin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Kevin_Lin"/>
+        <Literal>Lin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Laura_Farragh"/>
+        <Literal>Laura</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Laura_Farragh"/>
+        <Literal>Farragh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Lluis_Ferrer"/>
+        <Literal>Lluis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Lluis_Ferrer"/>
+        <Literal>Ferrer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+        <Literal>Maria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+        <Literal>20th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+        <Literal>Pediatrics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Maria_Garcia"/>
+        <Literal>Garcia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Mia_Vidal"/>
+        <Literal>Mia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Mia_Vidal"/>
+        <Literal>Vidal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Monica_Torres"/>
+        <Literal>Monica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Monica_Torres"/>
+        <Literal>Torres</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <Literal>Right</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <Literal>Oncology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Waiting_List"/>
+        <NamedIndividual IRI="#Oncology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <Literal>Right</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <Literal>Pediatrics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Waiting_List"/>
+        <NamedIndividual IRI="#Pediatrics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+        <Literal>Pen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+        <Literal>19th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+        <Literal>Pediatrics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Pen_Miller"/>
+        <Literal>Miller</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <Literal>Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <Literal>Radiology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Waiting_List"/>
+        <NamedIndividual IRI="#Radiology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Reception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Reception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Reception"/>
+        <Literal>Front</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Reception"/>
+        <Literal>Reception</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_104"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_105"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_111"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_112"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">112</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_113"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">113</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_201"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">201</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_202"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">202</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_221"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">221</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_222"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">222</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_223"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">223</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_301"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">301</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Consulting_number"/>
+        <NamedIndividual IRI="#Room_302"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">302</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Sean_Brown"/>
+        <Literal>Sean</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Sean_Brown"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Selena_Davis"/>
+        <Literal>Selena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Selena_Davis"/>
+        <Literal>Davis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+        <Literal>Susan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+        <Literal>16th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+        <Literal>Cardiology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Susan_Hilton"/>
+        <Literal>Hilton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Area_code"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Floor"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Side"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <Literal>Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <Literal>Traumatology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Waiting_List"/>
+        <NamedIndividual IRI="#Traumatology"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+        <Literal>Will</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Next_free_slot"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+        <Literal>27th January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Speciality"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+        <Literal>Oncology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Will_Freeman"/>
+        <Literal>Freeman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Xavier_Andreu"/>
+        <Literal>Xavier</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Surname"/>
+        <NamedIndividual IRI="#Xavier_Andreu"/>
+        <Literal>Andreu</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Contains"/>
+        <Class IRI="#Area"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Consulting_Room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Recepcionist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <Class IRI="#Consulting_Room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AttendsIn"/>
+        <Class IRI="#Consulting_Room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Contains"/>
+        <Class IRI="#Consulting_Room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Area"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#RoomHasDoctor"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Area_code"/>
+        <Class IRI="#Area"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Consulting_number"/>
+        <Class IRI="#Consulting_Room"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Floor"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Side"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Space_name"/>
+        <Class IRI="#Space"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Speciality"/>
+        <Class IRI="#Area"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Speciality"/>
+        <Class IRI="#Consulting_Room"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Speciality"/>
+        <Class IRI="#Doctor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Surname"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Waiting_List"/>
+        <Class IRI="#Area"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Doctor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Area_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Consulting_number"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Floor"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Next_free_slot"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Side"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Space_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Speciality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Surname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Waiting_List"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
