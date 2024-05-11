@@ -59,7 +59,10 @@ So... I want to share my passion with others and guide them into this vast field
 
 <a name="YouGov"></a>
 ### YouGov Data Modeling
-
+The primary goal of this repository is to demonstrate the transformation of a complex input dataset — a SPSS file with over 2,230 columns — into three comprehensible, interrelated tables. The purpose of this data modeling is:
+- To capture individual survey responses
+- Identify global trends by country.
+- Assess the branding of various destinations as tourist spots.
 
 <a name="llm"></a>
 ## LLM, ML & AI
