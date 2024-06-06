@@ -22,7 +22,6 @@ To ensure the quality and robustness of the data used for training the machine l
 * __Checking and adjusting data types:__ Verified the correctness of data types for each column.
 * __Handling null values:__ Addressed any missing values to avoid data quality issues.
 * __The dataset contains 8 main variables:__
-
  * __recipe:__ Unique identifier of the recipe (numeric)
  * __calories:__ Number of calories (numeric)
  * __carbohydrate:__ Amount of carbohydrates in grams (numeric)
