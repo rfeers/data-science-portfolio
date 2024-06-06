@@ -62,7 +62,7 @@ def get_response(request: RequestModel):
     return f"The '{prompt}' input is {label} with a score of {score}"
 ```
 
-### Step 3: Use Docker to Run Our Model
+### Step 3: Use Docker to Run Our Model
 1. Create a Dockerfile:
 ```
 # Use an official Python runtime as a parent image
