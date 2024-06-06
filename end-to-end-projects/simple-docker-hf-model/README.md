@@ -6,7 +6,7 @@ The project demonstrates how to deploy a sentiment analysis model using HuggingF
 The main goal of this project is to enable colleagues within a company to use a pre-trained HuggingFace sentiment analysis model without needing to download or implement it from scratch. 
 We achieve this by creating an API endpoint using FastAPI and containerizing the application with Docker for easy deployment.
 
-## Step 1: Choosing our HuggingFace Model
+### Step 1: Choosing our HuggingFace Model
 1. Install the necessary libraries:
 ```
 pip install transformers
@@ -34,7 +34,7 @@ def generate_response(prompt: str):
     return f"The '{prompt}' input is {label} with a score of {score}"
 ```
 
-## Step 2: Write API Endpoint for the Model with FastAPI
+### Step 2: Write API Endpoint for the Model with FastAPI
 1. Install FastAPI and pydantic:
 ```
 pip install fastapi pydantic uvicorn
@@ -62,7 +62,7 @@ def get_response(request: RequestModel):
     return f"The '{prompt}' input is {label} with a score of {score}"
 ```
 
-## Step 3: Use Docker to Run Our Model
+### Step 3: Use Docker to Run Our Model
 1. Create a Dockerfile:
 ```
 # Use an official Python runtime as a parent image
