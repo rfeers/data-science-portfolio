@@ -15,7 +15,7 @@ The raw data is modelized into five tables to smooth its consumption. These tabl
 <img width="696" alt="Chicago_taxis_data_modeling" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/191c31fe-a7e2-4172-9665-e92521abf1c7">
 
 * **trips:** Contains detailed trip information such as pickup and dropoff locations, trip duration, and distance.
-* **fares:**Includes fare-related data, including fare amount, tips, and payment methods.
+* **fares:** Includes fare-related data, including fare amount, tips, and payment methods.
 * **drivers:** Stores information about the drivers, including IDs and metadata.
 * **vehicles:** Holds data about the vehicles used for taxi services.
 * **weather:** Integrates weather data relevant to the time and location of each trip to provide additional context.
