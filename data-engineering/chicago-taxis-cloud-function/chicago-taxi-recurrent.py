@@ -1,17 +1,34 @@
+import base64
+import functions_framework
 import requests
 import pandas as pd
-import datetime
+from google.cloud import bigquery
+from google.cloud.exceptions import NotFound
+from datetime import datetime
+
+# Ensure the BigQuery client is initialized
+client = bigquery.Client(project="coral-environs-414713")
+
+def get_last_trip_start_timestamp(client, dataset_id: str = "chicago_taxis_data", table_name="rides_table"):
+    query = f"""
+        SELECT MAX(trip_start_timestamp) AS last_trip_start
+        FROM `{client.project}.{dataset_id}.{table_name}`
+    """
+    query_job = client.query(query)
+    results = query_job.result()  # Waits for the query to finish
+
+    for row in results:
+        return row.last_trip_start
+
+    return None  # In case there are no rows
 
 ## API CALL FUNCTION
 def get_data(start_date_time, limit: int = 1000, offset: int = 0):
     start_date_time_str = start_date_time.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3]
     url = "https://data.cityofchicago.org/resource/ajtu-isnz.json?$limit={0}&$offset={1}&$where=trip_start_timestamp>'{2}'".format(limit, offset, start_date_time_str)
-    #url = "https://data.cityofchicago.org/resource/wrvz-psew.json?$limit={0}&$offset={1}&$where=trip_start_timestamp between '2023-11-01T00:00:00.000' and '2023-11-30T00:00:00.000'".format(limit, offset)
-    #url = "https://data.cityofchicago.org/resource/wrvz-psew.json?$limit={0}&$offset={1}&$where=trip_start_timestamp between '2023-11-01T00:00:00.000' and '2023-11-31T00:00:00.000'".format(limit, offset)
 
     payload = {}
     headers = {}
-
     try:
         response = requests.request("GET", url, headers=headers, data=payload)  # Simplified request call
         response.raise_for_status()  # This will raise an exception for 4XX and 5XX status codes
@@ -19,7 +36,6 @@ def get_data(start_date_time, limit: int = 1000, offset: int = 0):
     except requests.exceptions.RequestException as e:
         print(f"Request failed: {e}")
         return {"error": True}  # Using a consistent error signaling in the response
-
 
 def data_modeling(df: pd.DataFrame):
     # Datetimes are objects, need to be parsed as datetime. 
@@ -78,12 +94,39 @@ def data_modeling(df: pd.DataFrame):
     
     return {"pickup_location_dim":pickup_location_dim, "dropoff_location_dim": dropoff_location_dim,  "company_type_dim":company_type_dim, "payment_type_dim": payment_type_dim, "rides_table": rides_table}
 
-if __name__ == "__main__":
+# Function to load dataframe to BigQuery
+def load_df_to_bigquery(client, dictionary: dict, dataset_id: str = "chicago_taxis_data"):
+    print("BQ TIME!")
+    for table_name, df in dictionary.items():
+        print(f"Processing table {table_name}")
+        table_full_path = f"{client.project}.{dataset_id}.{table_name}"
+        
+        # Check if the table exists
+        try:
+            client.get_table(table_full_path)  # Make an API request.
+            print(f"Table {table_name} exists, appending data.")
+            job_config = bigquery.LoadJobConfig(write_disposition=bigquery.WriteDisposition.WRITE_APPEND,)
+            # Load the dataframe to BigQuery
+            job = client.load_table_from_dataframe(df, table_full_path, job_config=job_config)
+            job.result()  # Wait for the job to complete
+
+        except NotFound:
+            print(f"Table {table_name} does not exist, creating and loading data.")
+            # Create the new data
+            job = client.load_table_from_dataframe(df, table_full_path)
+            job.result()  # Wait for the job to complete
+
+        print(f"Table {table_name} loaded successfully.")
+
+
+# Triggered from a message on a Cloud Pub/Sub topic.
+@functions_framework.cloud_event
+def hello_pubsub(cloud_event):
     ## RETREIVING DATA
     data = []
     limit = 100000
     offset = 0
-    start_date_time = datetime.datetime(2024, 1, 1, 0, 0, 0, 0)
+    start_date_time = get_last_trip_start_timestamp(client)
     while True: 
         data_batch = get_data(start_date_time, limit=limit, offset=offset)
         if "error" in data_batch:
@@ -98,10 +141,11 @@ if __name__ == "__main__":
         offset += limit
 
     if not data:
-        print("No data retrieved.")
+        return("No data retrieved.")
     else:
         try:
             output = data_modeling(pd.json_normalize(data))
-            print("Data modeling succeeded!")
+            load_df_to_bigquery(client, output)
+            return("Data modeling succeeded!")
         except Exception as e:
-            print(f"Data modeling failed: {e}")
+            return(f"Data modeling failed: {e}")
