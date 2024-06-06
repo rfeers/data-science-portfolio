@@ -10,7 +10,7 @@ To follow the entire process of ingesting data and building a dashboard. The who
 
 <img width="484" alt="GCP_BCN_schema" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/0063da1b-19dc-49cc-8112-7ad732c13d09">
 
-you can follow this series of articles:
+You can follow this series of articles:
 1. **What’s Behind Google Looker Studio — Unlocking the Power of Data Visualization** [[here](https://medium.com/forcodesake/google-looker-studio-power-data-visualization-science-gcp-cloud-big-query-sql-learning-dashboard-python-d4666895dc76)].
 2. **Creating a Google Looker Studio Dashboard — Populating it with data** [[here](https://medium.com/forcodesake/google-looker-studio-dashboard-populating-data-science-gcp-cloud-big-query-sql-learning-dashboard-python-7c02da66e83e)].
 3. [COMING SOON!] **A third article on How to build a Dashboard in Looker**.
