@@ -45,7 +45,7 @@ The PowerBI dashboard visualizes the data with the following features:
 Below are snapshots of the PowerBI dashboard included in the project:
 
 ### Main View - Municipalities
-<img width="1446" alt="Screenshot 2024-06-06 at 11 59 23" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/9969cd39-c295-4c1f-a33d-24a200058fba">
+<img width="1410" alt="Screenshot 2024-06-06 at 11 59 05" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/5c69462c-2eba-4d61-bdb7-374cc6cdbff2">
 
 ### Main View - Touristic Zones
 <img width="1446" alt="Screenshot 2024-06-06 at 11 59 16" src="https://github.com/rfeers/data-science-portfolio/assets/83583953/80243507-10ca-45e6-babb-77bd28b6cdb3">
