@@ -22,14 +22,14 @@ To ensure the quality and robustness of the data used for training the machine l
 * __Checking and adjusting data types:__ Verified the correctness of data types for each column.
 * __Handling null values:__ Addressed any missing values to avoid data quality issues.
 * __The dataset contains 8 main variables:__
- * __recipe:__ Unique identifier of the recipe (numeric)
- * __calories:__ Number of calories (numeric)
- * __carbohydrate:__ Amount of carbohydrates in grams (numeric)
- * __sugar:__ Amount of sugar in grams (numeric)
- * __protein:__ Amount of proteins in grams (numeric)
- * __category:__ Type of recipe (character)
- * __servings:__ Number of servings (numeric)
- * __high_traffic:__ Indicates if the traffic was high (character)
+  * recipe: Unique identifier of the recipe (numeric)
+  * calories: Number of calories (numeric)
+  * carbohydrate: Amount of carbohydrates in grams (numeric)
+  * sugar: Amount of sugar in grams (numeric)
+  * protein: Amount of proteins in grams (numeric)
+  * category: Type of recipe (character)
+  * servings: Number of servings (numeric)
+  * high_traffic: Indicates if the traffic was high (character)
 
 <a name="exploration"></a>
 ## Data Exploration
